@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'Homepage')
+@section('title', 'DC Comics')
 
 @section('main-content')
     <h1>
