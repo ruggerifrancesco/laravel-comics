@@ -60,10 +60,15 @@
 
                 <div class="socials-container">
                     <span class="social-title">Follow Us</span>
-                <AppSocialsListVue v-for="social in socialList"
-                    :name="social.socialName"
-                    :link="social.link"
-                    :icon="social.srcIcon"/>
+                    <ul class="m-0">
+                        @foreach (config('socials') as $social)
+                        <li>
+                            <a href="{{ $social['link'] }}">
+                                <img src="{{ Vite::asset('resources/img/' . $social['srcIcon']) }}" alt="{{ $social['socialName'] }}">
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul> 
                 </div>
             </div>
         </div>
