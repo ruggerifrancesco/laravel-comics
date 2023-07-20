@@ -164,7 +164,15 @@ footer {
 }
 
 .list-container {
-    margin-bottom: 1.4rem;
+
+    &:first-of-type {
+        margin-bottom: 1.4rem;  
+    }
+
+    li a {
+        color: $footer-links;
+        font-size: 0.92rem;
+    }
 }
 
 h4 {

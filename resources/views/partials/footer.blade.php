@@ -14,7 +14,7 @@
                         @endforeach
                     </ul>
                     <h4>Shop</h4>
-                    <ul>
+                    <ul class="list-container">
                         @foreach (config('footerlinks.shopItemsList') as $item)
                             <li>
                                 <a href="{{ $item['link'] }}">{{ $item['item'] }}</a>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Dc</h4>
-                    <ul>
+                    <ul class="list-container">
                         @foreach (config('footerlinks.dcItemsList') as $item)
                             <li>
                                 <a href="{{ $item['link'] }}">{{ $item['item'] }}</a>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Sites</h4>
-                    <ul>
+                    <ul class="list-container">
                         @foreach (config('footerlinks.siteItemsList') as $item)
                             <li>
                                 <a href="{{ $item['link'] }}">{{ $item['item'] }}</a>
