@@ -42,7 +42,7 @@
 
             <!-- Logo Background -->
             <div class="background-logo">
-                <img src="../assets/img/dc-logo-bg.png" alt="background logo">
+                <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="background logo">
             </div>
         </div>
     </section>
