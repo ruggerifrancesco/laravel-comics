@@ -64,7 +64,7 @@
                         @foreach (config('socials') as $social)
                         <li>
                             <a href="{{ $social['link'] }}">
-                                <img src="{{ Vite::asset('resources/img/' . $social['srcIcon']) }}" alt="{{ $social['socialName'] }}">
+                                <img src="{{ Vite::asset('resources/img/' . $social['srcIcon']) }}" alt="{{ $social['socialName'] }}" class="socialImg-icon">
                             </a>
                         </li>
                         @endforeach
