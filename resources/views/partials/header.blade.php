@@ -5,9 +5,11 @@
         </div>
         <nav>
             <ul class="my_list-nav">
-                <li>
-                    <a></a>
-                </li>
+                @foreach (config('navlinks') as $item)
+                    <li>
+                        <a href="{{ $item['href'] }}">{{ $item['item'] }}</a>
+                    </li>
+                @endforeach
             </ul>
         </nav>
     </div>
