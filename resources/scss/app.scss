@@ -145,6 +145,39 @@ main {
     }
 }
 
+.my_store-nav {
+    background-color: $digital-navigation;
+    padding: 3rem 0;
+
+    .wrapper {
+        @include flex (row, space-around, center);
+    }
+}
+
+.buy-store-section {
+
+    img {
+        width: 4rem;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+    }
+
+    &:hover {
+        transform: scale(1.05)
+    }
+}
+
+.store-context {
+    @include flex (row, none, center);
+    
+    .store-label {
+        color: white;
+        text-transform: uppercase;
+        font-family: "Lato", sans-serif;
+        margin-left: 1rem;
+    }
+}
+
 
 #load-more-btn {
     font-family: 'Oswald', sans-serif;
