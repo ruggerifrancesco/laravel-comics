@@ -60,7 +60,7 @@
 
                 <div class="socials-container">
                     <span class="social-title">Follow Us</span>
-                    <ul class="m-0">
+                    <ul class="m-0 socials-list">
                         @foreach (config('socials') as $social)
                         <li>
                             <a href="{{ $social['link'] }}">

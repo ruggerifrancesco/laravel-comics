@@ -208,7 +208,6 @@ h4 {
 
 .socials-container {
     @include flex (row, none, center);
-    gap: 1rem;
 }
 
 .social-title {
@@ -218,4 +217,13 @@ h4 {
     font-weight: 600;
     font-family: 'Oswald', sans-serif;
     margin-right: 1.5rem;
+}
+
+.socials-list {
+    @include flex (row, none, center);
+    gap: 1rem;
+}
+
+.socialImg-icon:hover {
+    filter: brightness(0) invert(1);
 }
